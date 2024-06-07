@@ -54,4 +54,34 @@ switch (day) {
         console.log('Just another day')
         break;
 }
-console.log(' ───♡─── All About Loops ───♡─── ')
+console.log(' ───♡─── All About Loops ───♡─── '); //loops are used to repeatedly run a block of code as long as a specified condition is true
+let i = 0;
+// for (i ; i < 5; i++) {
+//     console.log('Iteration', i); //iteration means is a repetition of a process
+// }
+// while (i < 5){
+//     console.log('wait until number', i);
+//     i++
+// }
+do {
+    console.log('Iteration again', i)
+    i++
+} while (i < 5); //most of them are basically does the same thing <3
+//exercise 3
+let ab = 1
+for (ab ; ab <= 10; ab++ ) {
+    console.log('EXERCISE 3', ab)
+}
+//exercise 3.2
+let ba = 2
+while (ba <= 10) {
+    console.log('EXERCISE 3.2', ba)
+    ba += 2; //allows the program to add by twos (2,4,6, and so on..)
+}
+//exercise 3.3
+let abc = 10
+do {
+    console.log('EXERCISE 3.3', abc)
+    abc--
+} while (abc >= 1);
+
