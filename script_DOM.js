@@ -9,3 +9,24 @@ console.log(' ───♡─── All About DOM ───♡─── '); //ja
     // console.log(elements3)
     // let elements4 = document.querySelectorAll('.myClass')
     // console.log(elements4)
+// let element = document.getElementById('myId');
+// element.style.color = 'red';
+// element.style.backgroundColor = 'yellow';    let element = document.getElementById('myId');
+// element.classList.add('newClass');    
+// element.classList.remove('oldClass');
+// element.classList.toggle('toggleClass');
+// let newElement = document.createElement('div');
+// newElement.textContent = 'Hello, World!';
+// document.body.appendChild(newElement);
+// let parentElement = document.getElementById('parent');
+// let childElement = document.getElementById('child');
+// parentElement.removeChild(childElement);
+// let box = document.getElementById('box');
+// box.classList.add('highlight');
+
+// setTimeout(() => {
+//     box.classList.remove('highlight');
+// }, 2000);
+// The 'highlight' class is added to the div, then removed after 2 seconds
+
+// INSHORT Wala po ako naintindihan on restudying this one.. kasi po alam ko na po paano ito hehe. katamad
