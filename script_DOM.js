@@ -29,4 +29,4 @@ console.log(' ───♡─── All About DOM ───♡─── '); //ja
 // }, 2000);
 // The 'highlight' class is added to the div, then removed after 2 seconds
 
-// INSHORT Wala po ako naintindihan on restudying this one.. kasi po alam ko na po paano ito hehe. katamad
+console.log('INSHORT Wala po ako naintindihan on restudying this one.. kasi po alam ko na po paano ito hehe. katamad')
