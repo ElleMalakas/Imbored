@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    text-decoration: none!important;
+    font-weight: bold;
+    font-family: 'Segoe UI'
+}
+
+#mainNav {
+    background-color: rgb(247, 171, 72);
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    h1 {
+        color: white;
+    }
+}
+
+#subNav {
+    background-color: rgb(255, 223, 182);
+    padding: 10px;
+    a {
+        color: rgb(48, 45, 45);
+    }
+}
