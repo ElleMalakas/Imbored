@@ -11,6 +11,8 @@ addButton.addEventListener('click', function () {
         let btn = document.createElement('button')
         btn.innerHTML = 'Remove'
         btn.style.marginLeft = '5px'
+        btn.style.marginRight = '5px'
+        btn.id = "removeBtn"
         btn.addEventListener('click', function() {
             li.remove()
             console.log(`(⛔) ${whatTask} : task has been removed ! `)
@@ -18,7 +20,7 @@ addButton.addEventListener('click', function () {
 
         let btn2 = document.createElement('button')
         btn2.innerHTML = 'Done'
-        btn.style.marginRight = '5px'
+        btn2.id = 'doneBtn'
         btn2.addEventListener('click', function() {
             if (li.style.textDecoration === 'line-through') {
                  li.style.textDecoration = 'none'
