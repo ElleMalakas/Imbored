@@ -31,9 +31,12 @@ header {
     background-color: #FFEAD2;
     border-radius: 15px;
     border: none;
-    width: 70px;
-    height: 70px;
-
+    width: 60px;
+    height: 60px;
+}
+#add:hover {
+    transition: all .5s;
+    background-color: #31394D;
 }
 #removeBtn {
     background-color: rgb(228, 130, 138);
