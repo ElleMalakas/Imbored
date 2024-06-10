@@ -4,15 +4,22 @@ addButton.addEventListener('click', function () {
     let whatTask = prompt('What task would you like to add ?')
 
     if (whatTask) { //lesson learned, always in-order
-        let li = document.createElement('li')
+
+        let taskSection = document.getElementById('taskslist')
+        let li = document.createElement('h4')
         let oldTask = document.createTextNode(whatTask)
         li.appendChild(oldTask)
         li.style.margin = '5px'
 
+        let btnList = document.createElement('div')
+        btnList.id = 'buttonlists' //id=buttonlists
+
         let btn = document.createElement('button')
-        btn.innerHTML = 'Remove'
-        btn.style.marginLeft = '5px'
-        btn.style.marginRight = '5px'
+        let img = document.createElement('img')
+        btn.appendChild(img)
+        img.src = 'public/remove.png'
+        // btn.style.marginLeft = '5px'
+        // btn.style.marginRight = '5px'
         btn.id = "removeBtn"
         btn.addEventListener('click', function() {
             li.remove()
@@ -20,7 +27,9 @@ addButton.addEventListener('click', function () {
         })
 
         let btn2 = document.createElement('button')
-        btn2.innerHTML = 'Done'
+        let img2 = document.createElement('img')
+        btn2.appendChild(img2)
+        img2.src = 'public/check.png'
         btn2.id = 'doneBtn'
         btn2.addEventListener('click', function() {
             if (li.style.textDecoration === 'line-through') {
@@ -34,7 +43,10 @@ addButton.addEventListener('click', function () {
         })
 
         let btn3 = document.createElement('button')
-        btn3.innerHTML = 'Edit'
+        let img3 = document.createElement('img')
+        btn3.appendChild(img3)
+        img3.src = 'public/edit.png'
+        btn3.id = 'editBtn'
         btn3.addEventListener('click', function() {
             let editedTask = prompt('Editing Task ...')
            if (editedTask) {
@@ -45,10 +57,23 @@ addButton.addEventListener('click', function () {
             console.log('Edited Task')
         })
 
-        li.appendChild(btn); //lesson learned, only append once at a time
-        li.appendChild(btn2)
-        li.appendChild(btn3)
-        document.body.appendChild(li)
+  
+              btnList.appendChild(btn)
+        btnList.appendChild(btn2)
+        btnList.appendChild(btn3)
+        taskSection.appendChild(btnList)
+        taskSection.appendChild(li);
+
+
+        // taskSection.appendChild(btnList)
+        // btnList.appendChild(btn)
+        // btnList.appendChild(btn2)
+        // btnList.appendChild(btn3)
+        // li.appendChild(btn); //lesson learned, only append once at a time
+        // li.appendChild(btn2)
+        // li.appendChild(btn3)
+        // document.body.appendChild(li)
+        // taskSection.appendChild(li)
         console.log('add button has been clicked and added a task ! 💢')
     }
 })

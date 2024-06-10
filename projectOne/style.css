@@ -11,10 +11,11 @@ body {
 
 header {
     padding: 20px;
-    background-color:#FFEAD2;
+    background-color: #FFEAD2;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h1 {
         color: #687AA9;
     }
@@ -34,15 +35,67 @@ header {
     width: 60px;
     height: 60px;
 }
+
 #add:hover {
     transition: all .5s;
     background-color: #31394D;
 }
-#removeBtn {
-    background-color: rgb(228, 130, 138);
- 
-}
-#doneBtn {
-    background-color: rgb(198, 228, 130);;
 
+#removeBtn {
+    background-color: #8294C4;
+    border: none;
+    border-radius: 8px;
+
+    img {
+        width: 30px;
+        height: 30px;
+ 
+        padding: 2px;
+    }
+}
+
+#doneBtn {
+    background-color: #8294C4;
+    border: none;
+    border-radius: 8px;
+
+    img {
+        width: 30px;
+        height: 30px;
+     
+        padding: 2px;
+    }
+}
+
+#editBtn {
+    background-color: #8294C4;
+    border: none;
+    border-radius: 8px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        
+        padding: 2px;
+    }
+}
+
+#buttonlist {
+    background-color: red;
+    display: flex;
+}
+
+h4 {
+    background-color: rgb(209, 95, 95);
+    width: 20em;
+    height: 10em;
+    border-radius: 20px;
+}
+
+#taskslist {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: center; */
 }
