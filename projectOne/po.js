@@ -5,7 +5,8 @@ addButton.addEventListener('click', function () {
 
     if (whatTask) { //lesson learned, always in-order
         let li = document.createElement('li')
-        li.innerHTML = whatTask
+        let oldTask = document.createTextNode(whatTask)
+        li.appendChild(oldTask)
         li.style.margin = '5px'
 
         let btn = document.createElement('button')
@@ -31,8 +32,22 @@ addButton.addEventListener('click', function () {
             }
             
         })
+
+        let btn3 = document.createElement('button')
+        btn3.innerHTML = 'Edit'
+        btn3.addEventListener('click', function() {
+            let editedTask = prompt('Editing Task ...')
+           if (editedTask) {
+            whatTask = editedTask //updates the whatTask variable to the edited one ~
+            oldTask.nodeValue = editedTask
+            console.log(editedTask)
+           }
+            console.log('Edited Task')
+        })
+
         li.appendChild(btn); //lesson learned, only append once at a time
         li.appendChild(btn2)
+        li.appendChild(btn3)
         document.body.appendChild(li)
         console.log('add button has been clicked and added a task ! 💢')
     }
