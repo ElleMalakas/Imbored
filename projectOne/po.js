@@ -1,3 +1,4 @@
+let addedTask = false
 let addButton = document.getElementById('add');
 
 addButton.addEventListener('click', function () {
@@ -21,12 +22,14 @@ addButton.addEventListener('click', function () {
 
         let li = document.createElement('h4')
         let oldTask = document.createTextNode(whatTask)
+        addedTask = true
         li.appendChild(oldTask)
 
 
         let btn = document.createElement('button')
         let img = document.createElement('img')
         btn.appendChild(img)
+        img.id = 'img1'
         img.src = 'public/remove.png'
         btn.id = "removeBtn"
         btn.addEventListener('click', function () {
@@ -42,6 +45,7 @@ addButton.addEventListener('click', function () {
         let btn2 = document.createElement('button')
         let img2 = document.createElement('img')
         btn2.appendChild(img2)
+        img2.id = 'img2'
         img2.src = 'public/check.png'
         btn2.id = 'doneBtn'
         btn2.addEventListener('click', function () {
@@ -58,6 +62,7 @@ addButton.addEventListener('click', function () {
         let btn3 = document.createElement('button')
         let img3 = document.createElement('img')
         btn3.appendChild(img3)
+        img3.id = 'img3'
         img3.src = 'public/edit.png'
         btn3.id = 'editBtn'
         btn3.addEventListener('click', function () {
@@ -92,36 +97,53 @@ addButton.addEventListener('click', function () {
     }
 })
 
-document.getElementById('abtn').addEventListener('click', function() {
-   let newstyleA = document.createElement('link')
-    newstyleA.rel = 'stylesheet'
-    newstyleA.href = 'styleA.css'
-    document.head.appendChild(newstyleA)
-})
-
-document.getElementById('bbtn').addEventListener('click', function() {
-    let newstyleB = document.createElement('link')
-     newstyleB.rel = 'stylesheet'
-     newstyleB.href = 'styleB.css'
-     document.head.appendChild(newstyleB)
- })
-
- document.getElementById('cbtn').addEventListener('click', function() {
-    let newstyleC = document.createElement('link')
-     newstyleC.rel = 'stylesheet'
-     newstyleC.href = 'styleC.css'
-     document.head.appendChild(newstyleC)
- })
-
- document.getElementById('dbtn').addEventListener('click', function() {
-    let newstyleC = document.createElement('link')
-     newstyleC.rel = 'stylesheet'
-     newstyleC.href = 'styleD.css'
-     document.head.appendChild(newstyleC)
- })
-
- function themeChange() {
-    let A = document.getElementById('abtn')
-    let bbtn
-    
- }
+function themeChange() {
+    document.body.addEventListener('click', function (event) {
+        let targetId = event.target.id;
+        if (targetId === 'abtn') {
+            let newstyleA = document.createElement('link')
+            newstyleA.rel = 'stylesheet'
+            newstyleA.href = 'styleA.css'
+            document.head.appendChild(newstyleA)
+            document.getElementById('addimg').src = 'public/add.png'
+            if (addedTask) {
+                document.getElementById('img1').src = 'public/remove.png'
+                document.getElementById('img2').src = 'public/check.png'
+                document.getElementById('img3').src = 'public/edit.png'
+            }
+        } else if (targetId === 'bbtn') {
+            let newstyleB = document.createElement('link')
+            newstyleB.rel = 'stylesheet'
+            newstyleB.href = 'styleB.css'
+            document.head.appendChild(newstyleB)
+            document.getElementById('addimg').src = 'public/addB.png'
+            if (addedTask) {
+                document.getElementById('img1').src = 'public/trashB.png'
+                document.getElementById('img2').src = 'public/checkB.png'
+                document.getElementById('img3').src = 'public/editB.png'
+            }
+        } else if (targetId === 'cbtn') {
+            let newstyleC = document.createElement('link')
+            newstyleC.rel = 'stylesheet'
+            newstyleC.href = 'styleC.css'
+            document.head.appendChild(newstyleC)
+            document.getElementById('addimg').src = 'public/addC.png'
+            if (addedTask) {
+                document.getElementById('img1').src = 'public/trashC.png'
+                document.getElementById('img2').src = 'public/checkC.png'
+                document.getElementById('img3').src = 'public/editC.png'
+            }
+        } else if (targetId === 'dbtn') {
+            let newstyleD = document.createElement('link')
+            newstyleD.rel = 'stylesheet'
+            newstyleD.href = 'styleD.css'
+            document.head.appendChild(newstyleD)
+            document.getElementById('addimg').src = 'public/addD.png'
+            if (addedTask) {
+                document.getElementById('img1').src = 'public/trashD.png'
+                document.getElementById('img2').src = 'public/checkD.png'
+                document.getElementById('img3').src = 'public/editD.png'
+            }
+        }
+    })
+}
