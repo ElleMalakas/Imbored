@@ -17,3 +17,7 @@
     padding: 35px;
 }
 
+#workingArea {
+    display: flex;
+    gap: 30px;
+}

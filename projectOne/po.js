@@ -5,26 +5,30 @@ addButton.addEventListener('click', function () {
 
     if (whatTask) { //lesson learned, always in-order
         let taskSection = document.createElement('div')
+        taskSection.id = 'taskSection'
+        taskSection.style.margin = '20px'
         let buttonSection = document.createElement('div')
+           buttonSection.id = 'buttonSection'
         let taskDesc = document.createElement('div')
+         taskDesc.id = 'taskDesc'
+       
 
         let li = document.createElement('h4')
         let oldTask = document.createTextNode(whatTask)
         li.appendChild(oldTask)
-        li.style.margin = '5px'
+      
 
         let btn = document.createElement('button')
         let img = document.createElement('img')
         btn.appendChild(img)
         img.src = 'public/remove.png'
-        // btn.style.marginLeft = '5px'
-        // btn.style.marginRight = '5px'
         btn.id = "removeBtn"
         btn.addEventListener('click', function() {
             li.remove()
             btn.remove()
             btn2.remove()
             btn3.remove()
+            taskSection.remove()
             console.log(`(⛔) ${whatTask} : task has been removed ! `)
         })
 
@@ -58,6 +62,8 @@ addButton.addEventListener('click', function () {
            }
             console.log('Edited Task')
         })
+
+   
 
         taskSection.appendChild(buttonSection)
         taskSection.appendChild(taskDesc)
