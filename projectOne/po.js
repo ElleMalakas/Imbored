@@ -4,6 +4,10 @@ addButton.addEventListener('click', function () {
     let whatTask = prompt('What task would you like to add ?')
 
     if (whatTask) { //lesson learned, always in-order
+        let taskSection = document.createElement('div')
+        let buttonSection = document.createElement('div')
+        let taskDesc = document.createElement('div')
+
         let li = document.createElement('h4')
         let oldTask = document.createTextNode(whatTask)
         li.appendChild(oldTask)
@@ -18,6 +22,9 @@ addButton.addEventListener('click', function () {
         btn.id = "removeBtn"
         btn.addEventListener('click', function() {
             li.remove()
+            btn.remove()
+            btn2.remove()
+            btn3.remove()
             console.log(`(⛔) ${whatTask} : task has been removed ! `)
         })
 
@@ -52,10 +59,22 @@ addButton.addEventListener('click', function () {
             console.log('Edited Task')
         })
 
-        li.appendChild(btn); //lesson learned, only append once at a time
-        li.appendChild(btn2)
-        li.appendChild(btn3)
-        document.body.appendChild(li)
+        taskSection.appendChild(buttonSection)
+        taskSection.appendChild(taskDesc)
+
+        buttonSection.appendChild(btn)
+        buttonSection.appendChild(btn2)
+        buttonSection.appendChild(btn3)
+
+        taskDesc.appendChild(li)
+
+        document.body.appendChild(taskSection)
+
+
+        // li.appendChild(btn); //lesson learned, only append once at a time
+        // li.appendChild(btn2)
+        // li.appendChild(btn3)
+        // document.body.appendChild(li)
       
         console.log('add button has been clicked and added a task ! 💢')
     }
