@@ -3,7 +3,7 @@ let addButton = document.getElementById('add');
 
 addButton.addEventListener('click', function () {
     let whatTask = prompt('What task would you like to add ?')
-
+    addedTask = true
     if (whatTask) { //lesson learned, always in-order
         let box = document.createElement('div')
         box.style.display = 'flex'
@@ -22,7 +22,6 @@ addButton.addEventListener('click', function () {
 
         let li = document.createElement('h4')
         let oldTask = document.createTextNode(whatTask)
-        addedTask = true
         li.appendChild(oldTask)
 
 
@@ -97,6 +96,35 @@ addButton.addEventListener('click', function () {
     }
 })
 
+function updateImg(theme) {
+    if (addedTask) {
+        switch (theme) {
+            case 'A':
+                document.getElementById('img1').src = 'public/remove.png'
+                document.getElementById('img2').src = 'public/check.png'
+                document.getElementById('img3').src = 'public/edit.png'
+                break;
+            case 'B':
+                document.getElementById('img1').src = 'public/trashB.png'
+                document.getElementById('img2').src = 'public/checkB.png'
+                document.getElementById('img3').src = 'public/editB.png'
+                break;
+            case 'C':
+                document.getElementById('img1').src = 'public/trashC.png'
+                document.getElementById('img2').src = 'public/checkC.png'
+                document.getElementById('img3').src = 'public/editC.png'
+                break;
+            case 'D':
+                document.getElementById('img1').src = 'public/trashD.png'
+                document.getElementById('img2').src = 'public/checkD.png'
+                document.getElementById('img3').src = 'public/editD.png'
+                break;
+            default:
+                break;
+        }
+    }
+}
+
 function themeChange() {
     document.body.addEventListener('click', function (event) {
         let targetId = event.target.id;
@@ -106,44 +134,28 @@ function themeChange() {
             newstyleA.href = 'styleA.css'
             document.head.appendChild(newstyleA)
             document.getElementById('addimg').src = 'public/add.png'
-            if (addedTask) {
-                document.getElementById('img1').src = 'public/remove.png'
-                document.getElementById('img2').src = 'public/check.png'
-                document.getElementById('img3').src = 'public/edit.png'
-            }
+            updateImg('A')
         } else if (targetId === 'bbtn') {
             let newstyleB = document.createElement('link')
             newstyleB.rel = 'stylesheet'
             newstyleB.href = 'styleB.css'
             document.head.appendChild(newstyleB)
             document.getElementById('addimg').src = 'public/addB.png'
-            if (addedTask) {
-                document.getElementById('img1').src = 'public/trashB.png'
-                document.getElementById('img2').src = 'public/checkB.png'
-                document.getElementById('img3').src = 'public/editB.png'
-            }
+            updateImg('B')
         } else if (targetId === 'cbtn') {
             let newstyleC = document.createElement('link')
             newstyleC.rel = 'stylesheet'
             newstyleC.href = 'styleC.css'
             document.head.appendChild(newstyleC)
             document.getElementById('addimg').src = 'public/addC.png'
-            if (addedTask) {
-                document.getElementById('img1').src = 'public/trashC.png'
-                document.getElementById('img2').src = 'public/checkC.png'
-                document.getElementById('img3').src = 'public/editC.png'
-            }
+            updateImg('C')
         } else if (targetId === 'dbtn') {
             let newstyleD = document.createElement('link')
             newstyleD.rel = 'stylesheet'
             newstyleD.href = 'styleD.css'
             document.head.appendChild(newstyleD)
             document.getElementById('addimg').src = 'public/addD.png'
-            if (addedTask) {
-                document.getElementById('img1').src = 'public/trashD.png'
-                document.getElementById('img2').src = 'public/checkD.png'
-                document.getElementById('img3').src = 'public/editD.png'
-            }
+            updateImg('D')
         }
     })
 }

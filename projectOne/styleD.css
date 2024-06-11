@@ -8,13 +8,13 @@ header {
     }
 }
 #add:hover {
-    background-color: #76897D
+    background-color: #2b2c2c
 }
 #add {
     background-color: #606E5E
 }
 button:hover {
-    background-color: #76897D
+    background-color: #2b2c2c
 }
 button {
     background-color: #F8EDE3
@@ -31,4 +31,16 @@ button {
     h4 {
         color: #F8EDE3
     }
+}
+#abtn {
+    background-color: #F8EDE3
+}
+#bbtn {
+    background-color: #F8EDE3
+}
+#cbtn {
+    background-color: #F8EDE3
+}
+#dbtn {
+    background-color: #2b2c2c
 }
