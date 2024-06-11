@@ -1,0 +1,34 @@
+body {
+    background-color: #F8EDE3
+}
+header {
+    background-color: #606E5E;
+    h1 {
+        color: #F8EDE3
+    }
+}
+#add:hover {
+    background-color: #76897D
+}
+#add {
+    background-color: #606E5E
+}
+button:hover {
+    background-color: #76897D
+}
+button {
+    background-color: #F8EDE3
+}
+.styleButtons {
+    button {
+        color: #606E5E;
+    }
+}
+#taskSection {
+    background-color: #606E5E
+}
+#taskDesc {
+    h4 {
+        color: #F8EDE3
+    }
+}

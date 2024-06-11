@@ -91,3 +91,37 @@ addButton.addEventListener('click', function () {
         console.log('add button has been clicked and added a task ! 💢')
     }
 })
+
+document.getElementById('abtn').addEventListener('click', function() {
+   let newstyleA = document.createElement('link')
+    newstyleA.rel = 'stylesheet'
+    newstyleA.href = 'styleA.css'
+    document.head.appendChild(newstyleA)
+})
+
+document.getElementById('bbtn').addEventListener('click', function() {
+    let newstyleB = document.createElement('link')
+     newstyleB.rel = 'stylesheet'
+     newstyleB.href = 'styleB.css'
+     document.head.appendChild(newstyleB)
+ })
+
+ document.getElementById('cbtn').addEventListener('click', function() {
+    let newstyleC = document.createElement('link')
+     newstyleC.rel = 'stylesheet'
+     newstyleC.href = 'styleC.css'
+     document.head.appendChild(newstyleC)
+ })
+
+ document.getElementById('dbtn').addEventListener('click', function() {
+    let newstyleC = document.createElement('link')
+     newstyleC.rel = 'stylesheet'
+     newstyleC.href = 'styleD.css'
+     document.head.appendChild(newstyleC)
+ })
+
+ function themeChange() {
+    let A = document.getElementById('abtn')
+    let bbtn
+    
+ }
