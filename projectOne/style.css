@@ -9,6 +9,13 @@ body {
     background-color: #ACB1D6;
 }
 
+.container {
+    margin: auto;
+    height: 100%;
+    max-width: 1000px;
+    border: 2px solid red;
+}
+
 header {
     padding: 20px;
     background-color: #FFEAD2;
@@ -23,12 +30,12 @@ header {
 
 #btnadd {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    padding: 30px
 }
 
 #add {
-    margin-top: 30px;
-    margin-right: 30px;
+
     background-color: #FFEAD2;
     border-radius: 15px;
     border: none;
@@ -54,6 +61,11 @@ header {
     }
 }
 
+#removeBtn:hover {
+    transition: all .5s;
+    background-color: #31394D;
+}
+
 #doneBtn {
     background-color: #8294C4;
     border: none;
@@ -66,7 +78,10 @@ header {
         padding: 4px;
     }
 }
-
+#doneBtn:hover {
+    transition: all .5s;
+    background-color: #31394D;
+}
 #editBtn {
     background-color: #8294C4;
     border: none;
@@ -79,10 +94,13 @@ header {
         padding: 4px;
     }
 }
-
+#editBtn:hover {
+    transition: all .5s;
+    background-color: #31394D;
+}
 #taskSection {
     background-color: #FFEAD2;
-    width: 300px;
+   width: 40em;
     height: 170px;
     border-radius: 20px;
     display: flex;

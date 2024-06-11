@@ -20,4 +20,9 @@
 #workingArea {
     display: flex;
     gap: 30px;
+
+    /* margin: auto;
+    height: 100%;
+    max-width: 1000px;
+    border: 2px solid red; */
 }
