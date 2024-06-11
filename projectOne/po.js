@@ -9,8 +9,6 @@ addButton.addEventListener('click', function () {
         li.appendChild(oldTask)
         li.style.margin = '5px'
 
-        let btnList = document.getElementById('buttonlist')
-
         let btn = document.createElement('button')
         let img = document.createElement('img')
         btn.appendChild(img)
@@ -57,7 +55,6 @@ addButton.addEventListener('click', function () {
         li.appendChild(btn); //lesson learned, only append once at a time
         li.appendChild(btn2)
         li.appendChild(btn3)
-        let taskSection = document.getElementById('taskslist')
         document.body.appendChild(li)
       
         console.log('add button has been clicked and added a task ! 💢')
