@@ -110,12 +110,24 @@ button {
 #abtn {
     background-color: #31394D;;
 }
+#abtn:hover {
+    background-color: #31394D;;
+}
 #bbtn {
     background-color: #8294C4;
+}
+#bbtn:hover {
+    background-color: #31394D;;
 }
 #cbtn {
     background-color: #8294C4;
 }
+#cbtn:hover {
+    background-color: #31394D;;
+}
 #dbtn {
     background-color: #8294C4;
+}
+#dbtn:hover {
+    background-color: #31394D;
 }

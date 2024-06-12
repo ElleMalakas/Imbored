@@ -47,12 +47,13 @@ addButton.addEventListener('click', function () {
         img2.src = getImgSrc('img2', currentTheme)
         btn2.id = 'doneBtn'
         btn2.addEventListener('click', function () {
-            if (li.style.textDecoration === 'line-through') {
-                li.style.textDecoration = 'none'
-                console.log(`(❌) ${whatTask} : task has been unchecked !`)
+            if (getComputedStyle(li).textDecoration.includes('line-through')) {
+                li.style.textDecoration = 'none';
+                console.log(`(❌) ${whatTask} : task has been unchecked !`);
             } else {
-                li.style.textDecoration = 'line-through'
-                console.log(`(✅) ${whatTask} : task has been finished !`)
+                li.style.textDecoration = 'line-through';
+                li.style.textDecorationThickness = '5px';
+                console.log(`(✅) ${whatTask} : task has been finished !`);
             }
 
         })

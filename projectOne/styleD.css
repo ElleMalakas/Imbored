@@ -35,12 +35,24 @@ button {
 #abtn {
     background-color: #F8EDE3
 }
+#abtn:hover {
+    background-color: #2b2c2c
+}
 #bbtn {
     background-color: #F8EDE3
+}
+#bbtn:hover {
+    background-color: #2b2c2c
 }
 #cbtn {
     background-color: #F8EDE3
 }
+#cbtn:hover {
+    background-color: #2b2c2c
+}
 #dbtn {
+    background-color: #2b2c2c
+}
+#dbtn:hover {
     background-color: #2b2c2c
 }
