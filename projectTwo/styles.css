@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.subFont {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.headFont {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.container {
+    max-width: 40cm;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffc0cb;
+}
+
+body {
+    background: url(public/webBg.png);
+    background-size: cover;
+    animation: pageAnimation 2s ease 0s 1 normal forwards;
+}
+
+@keyframes pageAnimation {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.initialPage {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.initial {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.initialBtn {
+    button {
+        border-radius: 40px;
+        width: 270px;
+        height: 100px;
+        font-size: 38.2px;
+        text-decoration: none;
+        background-color: #6b4c5d;
+        transition: all .4s;
+        cursor: pointer;
+        border: none;
+    }
+
+    button:hover {
+        background-color: #ffc0cb;
+        color: #6b4c5d;
+
+    }
+}
+
+/* Secondary Page */
+
+.secondaryPage {
+    display: flex;
+    height: 100vh;
+}
+
+.secondaryHeading2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary {
+    width: 40cm;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sbox {
+    display: flex;
+    gap: 35px;
+    background-color: #6b4c5d;
+    height: 75vh;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+/* Secondary Page: Tabs */
+
+.stab {
+    background-color: #8e6470;
+    height: 75vh;
+    border-radius: 40px;
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sgrid {
+    background-color: #8e6470;
+    height: 75vh;
+    border-radius: 40px;
+    width: 50vw;
+    padding: 30px;
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.ssgrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border: 1px solid red;
+    gap: 20px;
+}
+
+.scart {
+    background-color: #8e6470;
+    height: 75vh;
+    border-radius: 40px;
+    width: 13vw;
+}
+
+/* STabs Pages */
+
+.stabs2 {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+
+    button {
+        font-size: 26.5px;
+        letter-spacing: -1px;
+        background-color: #6b4c5d;
+        border: none;
+        width: 200px;
+        height: 80px;
+        border-radius: 40px;
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ffc0cb;
+        color: #6b4c5d;
+    }
+}
+
+/* SGrids Pages */
+
+.sgrids2 {
+    padding: 7px;
+    background-color: #b3888d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border-radius: 40px;
+    height: 200px;
+}
+
+.sgrids3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 50px; */
+    img {
+        width: 80%;
+    }
+    button {
+        background-color: #6b4c5d;
+        border-radius: 40px;
+        border: none;
+        height: 60px;
+        cursor: pointer;
+        transition: all .5s;
+        width: 140px;
+    }
+    button:hover {
+        background-color: #ffc0cb;
+        color: #6b4c5d;
+    }
+}
