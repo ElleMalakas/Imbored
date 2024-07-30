@@ -96,6 +96,7 @@ body {
 }
 
 .sbox {
+
     display: flex;
     gap: 35px;
     background-color: #6b4c5d;
@@ -107,6 +108,7 @@ body {
 /* Secondary Page: Tabs */
 
 .stab {
+
     background-color: #8e6470;
     height: 75vh;
     border-radius: 40px;
@@ -114,14 +116,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .sgrid {
     background-color: #8e6470;
-    height: 75vh;
+    height: 68.5vh;
     border-radius: 40px;
     width: 50vw;
     padding: 30px;
+
     h1 {
         margin-bottom: 20px;
     }
@@ -130,15 +134,37 @@ body {
 .ssgrid {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    border: 1px solid red;
     gap: 20px;
 }
 
 .scart {
     background-color: #8e6470;
-    height: 75vh;
+    height: 68.5vh;
     border-radius: 40px;
-    width: 13vw;
+    width: 8.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    img {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    button {
+        font-size: 26.5px;
+        letter-spacing: -1px;
+        background-color: #6b4c5d;
+        border: none;
+        width: 190px;
+        height: 70px;
+        border-radius: 40px;
+        transition: all .5s;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #ffc0cb;
+        color: #6b4c5d;
+    }
 }
 
 /* STabs Pages */
@@ -153,7 +179,7 @@ body {
         letter-spacing: -1px;
         background-color: #6b4c5d;
         border: none;
-        width: 200px;
+        width: 180px;
         height: 80px;
         border-radius: 40px;
         transition: all .5s;
@@ -183,21 +209,96 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+
     /* gap: 50px; */
     img {
-        width: 80%;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        object-position: center;
+        transition: all 0.5s;
+        position: relative;
+        bottom: -40px;
     }
-    button {
-        background-color: #6b4c5d;
-        border-radius: 40px;
-        border: none;
-        height: 60px;
-        cursor: pointer;
-        transition: all .5s;
-        width: 140px;
-    }
+
     button:hover {
         background-color: #ffc0cb;
         color: #6b4c5d;
     }
+}
+
+.addBtn {
+    background-color: #6b4c5d;
+    border-radius: 40px;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+    width: 140px;
+    opacity: 0;
+    transition: all .8s;
+}
+
+.sgrids2:hover>div>div>.addBtn {
+    opacity: 1;
+    transition: all .8s;
+}
+
+.sgrids2:hover {
+    img {
+        transform: scale(1.2) translateY(-30px)
+    }
+}
+
+/* SCarts Pages */
+
+.scarts2 {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 57px;
+    border-radius: 40px;
+    background-color: #b3888d;
+}
+
+.scarts3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+    align-items: center;
+    h1 {
+        color: #6b4c5d;
+    }
+}
+
+.scartContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product {
+    width: 75px;
+    height: 100%;
+    background-color: #6b4c5d;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin: auto;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.proceedBtn {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
 }
