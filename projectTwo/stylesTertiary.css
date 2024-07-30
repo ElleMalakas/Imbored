@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.subFont {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.headFont {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.container {
+    max-width: 40cm;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffc0cb;
+}
+
+body {
+    background: url(public/webBg.png);
+    background-size: cover;
+    animation: pageAnimation 2s ease 0s 1 normal forwards;
+}
+
+@keyframes pageAnimation {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tertiaryPage {
+    display: flex;
+    height: 100vh;
+}
+
+.tertiaryHeading2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.tertiary {
+    width: 40cm;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sbox {
+
+    display: flex;
+    gap: 25px;
+    background-color: #6b4c5d;
+    height: 75vh;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.sitem {
+    background-color: #8e6470;
+    height: 75vh;
+    border-radius: 40px;
+    width: 19vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    a {
+        margin-top: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.sno {
+    background-color: #8e6470;
+    height: 75vh;
+    border-radius: 40px;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    img {
+        width: 67px;
+        margin-top: 18px;
+        margin-bottom: 9px;
+        text-align: center;
+    }
+}
+
+/* sTotal Page */
+
+.stotal {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.subtotal {
+
+    background-color: #8e6470;
+    height: 50vh;
+    border-radius: 40px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ p {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.total {
+    background-color: #8e6470;
+    height: 25vh;
+    border-radius: 40px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* sFoot Page */
+.sfoot {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.review {
+    background-color: #8e6470;
+    height: 35vh;
+    border-radius: 40px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.credits {
+    background-color: #8e6470;
+    height: 45vh;
+    border-radius: 40px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Item Page */
+
+.item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ssitem {
+
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 70px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b3888d;
+}
+
+.itemDesc {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+}
+
+.itemContent {
+    width: 65px;
+    height: 6vh;
+    background-color: #6b4c5d;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin: auto;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* SNo Page */
+
+.no {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ssno {
+
+    display: flex;
+    justify-content: space-around;
+    width: 9vw;
+    height: 70px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b3888d;
+}
+
+.noDesc {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        border: none;
+        background-color: transparent;
+    }
+
+    img {
+        width: 33px;
+        height: 33px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.noContent {
+    align-items: center;
+    width: 55px;
+    height: 6vh;
+    background-color: #6b4c5d;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.noDesc {
+    img {
+        cursor: pointer;
+        margin: auto;
+        width: 33px;
+        height: 33px;
+        object-fit: cover;
+        object-position: center;
+    }
+    img:hover {
+        filter: brightness(0) saturate(100%) invert(33%) sepia(26%) saturate(477%) hue-rotate(274deg) brightness(88%) contrast(88%);
+    }
+}
+
+/* SubTotal Page */
+
+.sssubtotal {
+    display: flex;
+    justify-content: center;
+    width: 13vw;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b3888d;
+}
+
+.subtotalitem {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    h1 {
+        line-height: 15px;
+    }
+    
+}
