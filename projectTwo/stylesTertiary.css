@@ -71,17 +71,19 @@ body {
 
 .sitem {
     background-color: #8e6470;
-    height: 75vh;
+    /* height: 75vh; */
     border-radius: 40px;
-    width: 19vw;
+    width: 330px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px;
     align-items: center;
-
+    scrollbar-width: none;
+    -ms-overflow-style: none; */
+ /*   height: 80%; */
     a {
         margin-top: 18px;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
         text-align: center;
         cursor: pointer;
         transition: all .5s;
@@ -90,42 +92,66 @@ body {
         color: #6b4c5d;
     }
 }
+  
 
-.sno {
-    background-color: #8e6470;
-    height: 75vh;
-    border-radius: 40px;
-    width: 12vw;
+
+.finalsitem {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    height: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.finalsitem::-webkit-scrollbar {
+    display: none;
+  }
+.sno {
 
+    background-color: #8e6470;
+    /* height: 75vh; */
+    border-radius: 40px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     img {
         width: 67px;
         margin-top: 18px;
-        margin-bottom: 9px;
+        margin-bottom: 10px;
         text-align: center;
     }
 }
 
+.finalsno {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 10px;
+    align-items: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.finalsno::-webkit-scrollbar {
+    display: none;
+  }
 /* sTotal Page */
 
 .stotal {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     flex-direction: column;
 }
 
 .subtotal {
 
     background-color: #8e6470;
-    height: 50vh;
+    height: 600px;
     border-radius: 40px;
     width: 15vw;
     display: flex;
     flex-direction: column;
-    gap: 10px;
  p {
     margin-top: 18px;
     margin-bottom: 20px;
@@ -138,6 +164,19 @@ body {
     }
 }
 
+.finalstotal {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 10px;
+    align-items: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.finalstotal::-webkit-scrollbar {
+    display: none;
+  }
 .total {
     background-color: #8e6470;
     height: 25vh;
@@ -246,35 +285,36 @@ body {
 .item {
     display: flex;
     gap: 10px;
-    align-items: center;
+  align-items: center;
+  width: 250px;
+  height: 80px;
+  justify-content: center;
 }
 
 .ssitem {
-
     display: flex;
     justify-content: center;
-    width: 15vw;
-    height: 70px;
+  
     border-radius: 40px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #b3888d;
 }
 
 .itemDesc {
+  
     display: flex;
     flex-direction: column;
     line-height: 15px;
 }
 
 .itemContent {
-    width: 65px;
-    height: 6vh;
+
+    width: 70px;
+    height: 65px;
     background-color: #6b4c5d;
     border-radius: 40px;
     display: flex;
+    margin-left: -40px;
     justify-content: center;
-    margin-left: -20px;
     img {
         margin: auto;
         width: 42px;
@@ -287,24 +327,24 @@ body {
 /* SNo Page */
 
 .no {
+    width: 180px;
+    height: 80px;
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: center;  
+    justify-content: center;
 }
 
 .ssno {
-
     display: flex;
     justify-content: space-around;
-    width: 9vw;
-    height: 70px;
+
     border-radius: 40px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #b3888d;
 }
 
 .noDesc {
+ 
     display: flex;
     flex-direction: column;
     button {
@@ -317,7 +357,8 @@ body {
         object-fit: cover;
         object-position: center;
     }
-}
+} 
+
 .noContent {
     align-items: center;
     width: 55px;
@@ -345,25 +386,28 @@ body {
 /* SubTotal Page */
 
 .sssubtotal {
+   
     display: flex;
     justify-content: center;
-    width: 13vw;
-    height: 50px;
     border-radius: 40px;
-    margin-left: auto;
-    margin-right: auto;
+
     background-color: #b3888d;
 }
 
 .subtotalitem {
+    width: 230px;
+    justify-content: center;
+    height: 50px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+   
     h1 {
         line-height: 15px;
     }
     
 }
+
 
 /* Total Page Part */
 .sstotal {

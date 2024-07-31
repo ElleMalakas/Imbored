@@ -1,0 +1,57 @@
+{
+    "/projectTwo/public/avocado.png": {
+        "id": 101,
+        "name": "AVOCADO",
+        "price": 2.50
+    },
+    "/projectTwo/public/banana.png": {
+        "id": 102,
+        "name": "BANANA",
+        "price": 1.20
+    },
+    "/projectTwo/public/blueberry.png": {
+        "id": 103,
+        "name": "BLUEBERRY",
+        "price": 0.99
+    },
+    "/projectTwo/public/cherries.png": {
+        "id": 104,
+        "name": "CHERRIES",
+        "price": 0.99
+    },
+    "/projectTwo/public/mango.png": {
+        "id": 105,
+        "name": "MANGO",
+        "price": 1.90
+    },
+    "/projectTwo/public/orange.png": {
+        "id": 106,
+        "name": "ORANGE",
+        "price": 0.99
+    },
+    "/projectTwo/public/peach.png": {
+        "id": 107,
+        "name": "PEACH",
+        "price": 0.99
+    },
+    "/projectTwo/public/pineapple.png": {
+        "id": 108,
+        "name": "PINEAPPLE",
+        "price": 1.50
+    },
+    "/projectTwo/public/strawberry.png": {
+        "id": 109,
+        "name": "STRAWBERRY",
+        "price": 1.50
+    },
+    "/projectTwo/public/watermelon.png": {
+        "id": 110,
+        "name": "WATERMELON",
+        "price": 2.99
+    },
+    "/projectTwo/public/apple.png": {
+        "id": 111,
+        "name": "APPLE",
+        "price": 0.99
+    }
+}

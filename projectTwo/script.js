@@ -40,7 +40,8 @@ updateCartUI();
 addBtns.forEach((button) => {
   button.addEventListener('click', (e) => {
     const productImage = e.target.parentNode.previousElementSibling.querySelector('img');
-    const productName = productImage.src;
+    const fullImagePath = productImage.src;
+    const productName = new URL(fullImagePath).pathname;
 
     if (cartItems[productName]) {
       cartItems[productName].quantity++;
