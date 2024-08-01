@@ -123,19 +123,26 @@ body {
     background-color: #8e6470;
     height: 68.5vh;
     border-radius: 40px;
-    width: 50vw;
+    width: 48.3vw;
     padding: 30px;
+
     h1 {
         margin-bottom: 20px;
     }
-   
+
 }
 
-.ssgrid {
+.ssgrid {will-change: scroll-position;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-   
+    overflow-x: auto;
+    -ms-overflow-style: none;
+}
+
+.ssgrid::-webkit-scrollbar {
+    display: none;
 }
 
 .scart {
@@ -147,10 +154,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 30px;
+
     img {
         width: 80px;
         margin-bottom: 20px;
     }
+
     button {
         font-size: 26.5px;
         letter-spacing: -1px;
@@ -162,6 +171,7 @@ body {
         transition: all .5s;
         cursor: pointer;
     }
+
     button:hover {
         background-color: #ffc0cb;
         color: #6b4c5d;
@@ -270,7 +280,7 @@ body {
     justify-content: space-between;
     margin-right: 35px;
     align-items: center;
-   
+
     h1 {
         margin-right: -10px;
         color: #6b4c5d;
@@ -282,16 +292,16 @@ body {
     flex-direction: column;
     gap: 10px;
     height: 80%;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .scartContent::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .product {
- 
+
     width: 75px;
     height: 55px;
     background-color: #6b4c5d;
@@ -309,13 +319,13 @@ body {
 }
 
 .proceedBtn {
-    
+
     height: 100%;
     display: flex;
     align-items: flex-end;
 }
 
 .active-category {
-    background-color: #ffc0cb!important;
-    color: #6b4c5d!important;
+    background-color: #ffc0cb !important;
+    color: #6b4c5d !important;
 }

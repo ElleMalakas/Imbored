@@ -35,6 +35,7 @@ function updateCartUI() {
     cartPart.style.height = '90cm';
   }
 }
+
 updateCartUI();
 
 addBtns.forEach((button) => {
@@ -56,6 +57,10 @@ addBtns.forEach((button) => {
     updateCartUI();
   });
 });
+
+//Random Scrolling Shet
+
+
 
 // Categories to go to
 
@@ -86,3 +91,11 @@ categoryButtons.forEach(button => {
 });
 
 updateCategory('FRUIT');
+const ssgridTab = document.querySelector('.ssgrid')
+
+ssgridTab.addEventListener('wheel', (event) => {
+  ssgridTab.scrollTo({
+    left: ssgridTab.scrollLeft + event.deltaY,
+    behavior: 'smooth'
+  });
+});
