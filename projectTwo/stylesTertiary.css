@@ -396,12 +396,10 @@ body {
 
 .subtotalitem {
     width: 230px;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 50px;
     display: flex;
     align-items: center;
-    gap: 40px;
-   
     h1 {
         line-height: 15px;
     }

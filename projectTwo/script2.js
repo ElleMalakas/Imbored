@@ -94,6 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         ssno.remove()
                         ssitem.remove()
                         sssubtotal.remove()
+                    } else {
+                        stotalPrice.innerText = `${(cartItems[productName].quantity * productInfo.price).toFixed(2)} $`;
                     }
 
                 }
@@ -164,7 +166,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const stotalPrice = document.createElement('h1');
                 stotalPrice.className = 'headFont';
                 stotalPrice.style.fontSize = '17.3px';
-                stotalPrice.innerText = `${productInfo.price} $`;
+                stotalPrice.innerText = `${cartItems[productName] ? (cartItems[productName].quantity * productInfo.price).toFixed(2) : '0.00'} $`;
+
+                
                 stotaldiv2.appendChild(stotalPrice)
 
                 subtotalitem.appendChild(stotaldiv1)
@@ -178,7 +182,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     finalstotal.style.height = '370px';
                   }
             });
-
+            const syncScroll = (source, target) => {
+                target.scrollTop = source.scrollTop;
+            };
+            
+            finalsitem.addEventListener('scroll', () => syncScroll(finalsitem, finalsno));
+            finalsno.addEventListener('scroll', () => syncScroll(finalsno, finalsitem));
             
         })
 
