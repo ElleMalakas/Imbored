@@ -1,5 +1,5 @@
 {
-    "/projectTwo/public/fruit/fruit/avocado.png": {
+    "/projectTwo/public/fruit/avocado.png": {
         "id": 101,
         "name": "AVOCADO",
         "price": 2.50
@@ -55,6 +55,8 @@
         "price": 0.99
     },
 
+
+
     "/projectTwo/public/meat/bacon.png": {
         "id": 211,
         "name": "BACON",
@@ -84,5 +86,57 @@
         "id": 216,
         "name": "STEAK",
         "price": 5.00
+    },
+
+
+    "/projectTwo/public/bakery/bagels.png": {
+        "id": 317,
+        "name": "BAGEL",
+        "price": 0.99
+    },
+    "/projectTwo/public/bakery/bread.png": {
+        "id": 318,
+        "name": "BREAD",
+        "price": 0.99
+    },
+    "/projectTwo/public/bakery/cinnamon-roll.png": {
+        "id": 319,
+        "name": "CINNAROLL",
+        "price": 1.99
+    },
+    "/projectTwo/public/bakery/croissant.png": {
+        "id": 320,
+        "name": "CROISSANT",
+        "price": 1.20
+    },
+    "/projectTwo/public/bakery/frenchbread.png": {
+        "id": 321,
+        "name": "BAGUETTE",
+        "price": 1.99
+    },
+    "/projectTwo/public/bakery/muffin.png": {
+        "id": 322,
+        "name": "MUFFIN",
+        "price": 0.99
+    },
+    "/projectTwo/public/bakery/pita-bread.png": {
+        "id": 323,
+        "name": "PITA",
+        "price": 0.99
+    },
+    "/projectTwo/public/bakery/pretzel.png": {
+        "id": 324,
+        "name": "PRETZEL",
+        "price": 0.99
+    },
+    "/projectTwo/public/bakery/pumpernickel.png": {
+        "id": 325,
+        "name": "CHOCO BREAD",
+        "price": 2.99
+    },
+    "/projectTwo/public/bakery/rolls.png": {
+        "id": 326,
+        "name": "BREAD ROLL",
+        "price": 0.99
     }
 }
