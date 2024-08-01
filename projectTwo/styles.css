@@ -125,16 +125,17 @@ body {
     border-radius: 40px;
     width: 50vw;
     padding: 30px;
-
     h1 {
         margin-bottom: 20px;
     }
+   
 }
 
 .ssgrid {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 20px;
+   
 }
 
 .scart {
@@ -314,4 +315,7 @@ body {
     align-items: flex-end;
 }
 
-/* Tertiary Pages */
+.active-category {
+    background-color: #ffc0cb!important;
+    color: #6b4c5d!important;
+}

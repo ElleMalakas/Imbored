@@ -3,10 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script123.js"></script>
+    <title>Klaveri | Store</title>
+    <link rel="stylesheet" href="123.css">
+    <link rel="icon" href="public/favicon.ico">
 </head>
 <body>
-    fwa
+    <main class="secondaryPage">
+        <div class="container">
+            <div class="secondary">
+                <div class="secondaryHeading">
+                    <p onclick="window.location.href='projecttwo.html'" class="subFont">Klaveri</p>
+                    <div class="secondaryHeading2">
+                        <h1 class="headFont" onclick="window.location.href='projecttwo.html'">
+                            GROCERY STORE <span class="subFont">in de leavei</span>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="secondaryMain">
+                    <div class="sbox">
+                        <!-- Category Navigation -->
+                        <div class="stab">
+                            <div class="stabs2"><button class="headFont" onclick="showCategory('fruit')">FRUIT</button></div>
+                            <div class="stabs2"><button class="headFont" onclick="showCategory('meat')">MEAT</button></div>
+                            <div class="stabs2"><button class="headFont" onclick="showCategory('bakery')">BAKERY</button></div>
+                            <!-- Add more categories as needed -->
+                        </div>
+
+                        <!-- Content for Each Category -->
+                        <div class="sgrid">
+                            <!-- Fruit Department -->
+                            <div id="fruit" class="category">
+                                <h1 class="headFont">FRUIT DEPARTMENT</h1>
+                                <div class="ssgrid">
+                                    <!-- Fruit items here -->
+                                    <div class="sgrids2">
+                                        <div class="sgrids3">
+                                            <div><img src="public/apple.png"></div>
+                                            <div><button class="headFont addBtn">ADD</button></div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat for other fruits -->
+                                </div>
+                            </div>
+
+                            <!-- Meat Department -->
+                            <div id="meat" class="category" style="display:none;">
+                                <h1 class="headFont">MEAT DEPARTMENT</h1>
+                                <div class="ssgrid">
+                                    <!-- Meat items here -->
+                                    <!-- Add meat items here -->
+                                </div>
+                            </div>
+
+                            <!-- Bakery Department -->
+                            <div id="bakery" class="category" style="display:none;">
+                                <h1 class="headFont">BAKERY DEPARTMENT</h1>
+                                <div class="ssgrid">
+                                    <!-- Bakery items here -->
+                                    <!-- Add bakery items here -->
+                                </div>
+                            </div>
+
+                            <!-- Add more departments as needed -->
+                        </div>
+
+                        <!-- Shopping Cart -->
+                        <div class="scart">
+                            <img src="public/cart.png">
+                            <div class="scartContent">
+                                <!-- Shopping cart items go here -->
+                            </div>
+                            <div class="proceedBtn">
+                                <button class="headFont" onclick="window.location.href='projectCart.html'">PROCEED</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script123.js"></script>
 </body>
 </html>

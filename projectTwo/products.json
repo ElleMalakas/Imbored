@@ -1,57 +1,88 @@
 {
-    "/projectTwo/public/avocado.png": {
+    "/projectTwo/public/fruit/fruit/avocado.png": {
         "id": 101,
         "name": "AVOCADO",
         "price": 2.50
     },
-    "/projectTwo/public/banana.png": {
+    "/projectTwo/public/fruit/banana.png": {
         "id": 102,
         "name": "BANANA",
         "price": 1.20
     },
-    "/projectTwo/public/blueberry.png": {
+    "/projectTwo/public/fruit/blueberry.png": {
         "id": 103,
         "name": "BLUEBERRY",
         "price": 0.99
     },
-    "/projectTwo/public/cherries.png": {
+    "/projectTwo/public/fruit/cherries.png": {
         "id": 104,
         "name": "CHERRIES",
         "price": 0.99
     },
-    "/projectTwo/public/mango.png": {
+    "/projectTwo/public/fruit/mango.png": {
         "id": 105,
         "name": "MANGO",
         "price": 1.90
     },
-    "/projectTwo/public/orange.png": {
+    "/projectTwo/public/fruit/orange.png": {
         "id": 106,
         "name": "ORANGE",
         "price": 0.99
     },
-    "/projectTwo/public/peach.png": {
+    "/projectTwo/public/fruit/peach.png": {
         "id": 107,
         "name": "PEACH",
         "price": 0.99
     },
-    "/projectTwo/public/pineapple.png": {
+    "/projectTwo/public/fruit/pineapple.png": {
         "id": 108,
         "name": "PINEAPPLE",
         "price": 1.50
     },
-    "/projectTwo/public/strawberry.png": {
+    "/projectTwo/public/fruit/strawberry.png": {
         "id": 109,
         "name": "STRAWBERRY",
         "price": 1.50
     },
-    "/projectTwo/public/watermelon.png": {
+    "/projectTwo/public/fruit/watermelon.png": {
         "id": 110,
         "name": "WATERMELON",
         "price": 2.99
     },
-    "/projectTwo/public/apple.png": {
+    "/projectTwo/public/fruit/apple.png": {
         "id": 111,
         "name": "APPLE",
         "price": 0.99
+    },
+
+    "/projectTwo/public/meat/bacon.png": {
+        "id": 211,
+        "name": "BACON",
+        "price": 1.99
+    },
+    "/projectTwo/public/meat/beef.png": {
+        "id": 212,
+        "name": "BEEF",
+        "price": 3.50
+    },
+    "/projectTwo/public/meat/chicken-leg.png": {
+        "id": 213,
+        "name": "CHICKEN LEG",
+        "price": 1.99
+    },
+    "/projectTwo/public/meat/chop.png": {
+        "id": 214,
+        "name": "CHOP",
+        "price": 2.50
+    },
+    "/projectTwo/public/meat/sausages.png": {
+        "id": 215,
+        "name": "SAUSAGES",
+        "price": 0.99
+    },
+    "/projectTwo/public/meat/steak.png": {
+        "id": 216,
+        "name": "STEAK",
+        "price": 5.00
     }
 }

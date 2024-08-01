@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background: url(public/webBg.png);
+    background-size: cover;
+    animation: pageAnimation 2s ease 0s 1 normal forwards;
+    color: #ffc0cb;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.container {
+    max-width: 40cm;
+    margin: 0 auto;
+}
+
+.secondaryPage {
+    display: flex;
+    height: 100vh;
+}
+
+.secondary {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.sbox {
+    display: flex;
+    gap: 35px;
+    background-color: #6b4c5d;
+    border-radius: 40px;
+    padding: 30px;
+    height: 75vh;
+}
+
+.stab {
+    background-color: #8e6470;
+    border-radius: 40px;
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+}
+
+.stabs2 {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.stabs2 button {
+    font-size: 26.5px;
+    letter-spacing: -1px;
+    background-color: #6b4c5d;
+    border: none;
+    width: 180px;
+    height: 80px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.stabs2 button:hover {
+    background-color: #ffc0cb;
+    color: #6b4c5d;
+}
+
+.sgrid {
+    background-color: #8e6470;
+    border-radius: 40px;
+    padding: 30px;
+    width: 50vw;
+    height: 68.5vh;
+}
+
+.ssgrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.sgrids2 {
+    background-color: #b3888d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    height: 200px;
+    padding: 7px;
+}
+
+.sgrids3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.sgrids3 img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s;
+}
+
+.sgrids3 button.addBtn {
+    background-color: #6b4c5d;
+    border-radius: 40px;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+    width: 140px;
+    opacity: 0;
+    transition: all .8s;
+}
+
+.sgrids2:hover .addBtn {
+    opacity: 1;
+    transition: all .8s;
+}
+
+.sgrids2:hover img {
+    transform: scale(1.2) translateY(-30px);
+}
+
+.scart {
+    background-color: #8e6470;
+    border-radius: 40px;
+    width: 8.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    height: 68.5vh;
+}
+
+.scart img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.scartContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.proceedBtn button {
+    font-size: 26.5px;
+    letter-spacing: -1px;
+    background-color: #6b4c5d;
+    border: none;
+    width: 190px;
+    height: 70px;
+    border-radius: 40px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.proceedBtn button:hover {
+    background-color: #ffc0cb;
+    color: #6b4c5d;
+}
+
+@keyframes pageAnimation {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.category {
+    display: none;
+}
+
+#fruit {
+    display: block;
+}

@@ -56,3 +56,33 @@ addBtns.forEach((button) => {
     updateCartUI();
   });
 });
+
+// Categories to go to
+
+function updateCategory(category) {
+    const categorySpan = document.querySelector('.nameCategory');
+    categorySpan.innerText = category;
+    const departments = document.querySelectorAll('.department');
+    departments.forEach(dept => dept.style.display = 'none');
+    const selectedDepartment = document.getElementById(category.toLowerCase() + 'Department');
+    if (selectedDepartment) {
+        selectedDepartment.style.display = 'grid';
+    }
+    const categoryButtons = document.querySelectorAll('.stabs2 button');
+    categoryButtons.forEach(button => button.classList.remove('active-category'));
+    categoryButtons.forEach(button => {
+        if (button.innerText.toUpperCase() === category.toUpperCase()) {
+            button.classList.add('active-category');
+        }
+    });
+}
+
+const categoryButtons = document.querySelectorAll('.stabs2 button');
+categoryButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const category = e.target.innerText; 
+        updateCategory(category);
+    });
+});
+
+updateCategory('FRUIT');

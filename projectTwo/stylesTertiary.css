@@ -194,9 +194,10 @@ body {
      }
      button {
         cursor: pointer;
-        margin-top: 10px;
+        margin-top: 5px;
         border: none;
-        font-size: 26.5px;
+        margin-bottom: 13px;
+        font-size: 23.5px;
         background-color:#6b4c5d;
         width: 13vw;
         border-radius: 40px;
